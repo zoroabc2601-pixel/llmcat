@@ -145,7 +145,7 @@ See [`llmcat/cli.py`](llmcat/cli.py) for the full lists — easy to customize.
 PRs welcome! This project is intentionally simple and dependency-free. Keep it that way.
 
 ```bash
-git clone https://github.com/yourusername/llmcat
+git clone https://github.com/zoroabc2601-pixel/llmcat
 cd llmcat
 pip install -e .
 llmcat . -c  # dogfood it immediately
