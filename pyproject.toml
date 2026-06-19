@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llmcat"
+version = "0.1.0"
+description = "Dump any codebase into perfect AI context — like cat, but for LLMs"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["llm", "ai", "claude", "chatgpt", "context", "codebase", "cli", "developer-tools"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+llmcat = "llmcat.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/llmcat"
+Repository = "https://github.com/yourusername/llmcat"
+"Bug Tracker" = "https://github.com/yourusername/llmcat/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["llmcat*"]
